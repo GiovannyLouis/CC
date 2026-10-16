@@ -912,7 +912,7 @@
                     <span class="hero-tagline"><!-- EDIT HERE: Greeting --> 👋 Welcome to my portfolio</span>
                     <h1 class="hero-title">
                         <!-- EDIT HERE: Your Name -->
-                        Hi, I'm <span style="color: var(--accent);">[Your Full Name]</span>
+                        Hi, I'm <span style="color: var(--accent);">Him</span>
                     </h1>
                     <h2 class="hero-subtitle">
                         <!-- EDIT HERE: Headline / Subtitle -->
