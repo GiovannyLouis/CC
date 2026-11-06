@@ -3,6 +3,7 @@
 .env
 .env.backup
 .env.production
+.git
 .phpactor.json
 .phpunit.result.cache
 /.codex
@@ -13,6 +14,7 @@
 /.vscode
 /.zed
 /auth.json
+/bootstrap/cache/*
 /node_modules
 /public/build
 /public/fonts-manifest.dev.json
@@ -25,4 +27,3 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
-.git
