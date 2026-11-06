@@ -93,7 +93,7 @@ jobs:
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.5'
+        php-version: '8.4'
         extensions: mbstring, xml, ctype, iconv, bcmath, filter, zip
         tools: composer:v2
         coverage: none
@@ -121,7 +121,7 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: 22
         source: "vendor.tar.gz"
-        target: "/home/giovannyla-la/htdocs/la.giovannyla.my.id/public"
+        target: "/home/giovannyla-la/htdocs/la.giovannyla.my.id/"
 
     - name: Deploy via SSH
       uses: appleboy/ssh-action@v1.2.5
@@ -131,7 +131,7 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         port: 22
         script: |
-          cd /home/giovannyla-la/htdocs/la.giovannyla.my.id/public
+          cd /home/giovannyla-la/htdocs/la.giovannyla.my.id
           git pull origin main
           rm -rf vendor
           tar -xzf vendor.tar.gz
